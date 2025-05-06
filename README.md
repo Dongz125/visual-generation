@@ -73,7 +73,7 @@ POST /visuals
 Request Body:
 ```json
 {
-    "script": "A beautiful sunset over mountains",
+    "script": "Black holes are regions of spacetime where gravity is so strong that nothing, including light, can escape from them. At the center of a black hole lies a singularity, a point where the laws of physics as we know them break down. The boundary of a black hole is called the event horizon, beyond which events cannot affect an outside observer.",
     "type": "image",
     "style": "realistic",
     "resolution": "1024x1024"
@@ -89,14 +89,26 @@ Parameters:
 Response:
 ```json
 {
-    "visuals": [
-        {
-            "visual_id": "generated_id",
-            "visual_url": "https://cloudinary-url.com/image.jpg",
-            "type": "image",
-            "style": "realistic"
-        }
-    ]
+  "visuals": [
+    {
+      "visual_id": "66b2dd4b-ffbe-4567-b52d-28b2b7f33353",
+      "visual_url": "https://res.cloudinary.com/dddhsnmiw/image/upload/v1746524697/66b2dd4b-ffbe-4567-b52d-28b2b7f33353.png",
+      "type": "image",
+      "style": "realistic"
+    },
+    {
+      "visual_id": "21a2b14a-8877-4bf2-9599-cde04fe77ccd",
+      "visual_url": "https://res.cloudinary.com/dddhsnmiw/image/upload/v1746524699/21a2b14a-8877-4bf2-9599-cde04fe77ccd.png",
+      "type": "image",
+      "style": "realistic"
+    },
+    {
+      "visual_id": "492786bc-fcc2-4376-9b0b-1878bf599752",
+      "visual_url": "https://res.cloudinary.com/dddhsnmiw/image/upload/v1746524701/492786bc-fcc2-4376-9b0b-1878bf599752.png",
+      "type": "image",
+      "style": "realistic"
+    }
+  ]
 }
 ```
 
