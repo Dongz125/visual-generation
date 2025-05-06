@@ -1,0 +1,10 @@
+
+fastapi==0.115.12
+uvicorn==0.34.2
+cloudinary==1.44.0
+google-ai-generativelanguage==0.6.15
+google-genai==1.11.0
+google-generativeai==0.8.5
+python-dotenv==1.1.0
+spacy==3.8.5
+Pillow==9.5.0  # Thêm Pillow vào để thay thế PIL
