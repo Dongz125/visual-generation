@@ -76,6 +76,7 @@ Request Body:
     "script": "A beautiful sunset over mountains",
     "type": "image",
     "style": "realistic",
+    "resolution": "1024x1024",
 }
 ```
 
@@ -83,7 +84,7 @@ Parameters:
 - `script` (string, required): Description of the visual content to generate
 - `type` (string, required): Type of content ("image" or "video")
 - `style` (string, required): Artistic style for the generation
-- `resolution` (string, optional): Resolution of the output (default: "1024x1024")
+- `resolution` (string, required): Resolution of the output
 
 Response:
 ```json
