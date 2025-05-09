@@ -38,7 +38,7 @@ def generate_visual(script: str, type: str, style: str, resolution: str) -> str:
             for description in descriptions:
                 response = client.models.generate_content(
                     model="gemini-2.0-flash-exp-image-generation",
-                    contents=f"{description}. Create a picture of it with no word in the picture.",
+                    contents=f"{description}. Create a picture of it in solution {resolution} with no word in the picture.",
                     config=types.GenerateContentConfig(
                         response_modalities=['TEXT', 'IMAGE']
                     )
@@ -78,8 +78,8 @@ def save_visual(responses, resolution: str):
             for part in response.candidates[0].content.parts:
                 if part.inline_data is not None:
                     image = Image.open(BytesIO((part.inline_data.data)))
-                    # width, height = map(int, resolution.split('x'))
-                    #image = image.resize((width, height), Image.Resampling.LANCZOS)
+                    width, height = map(int, resolution.split('x'))
+                    image = image.resize((width, height), Image.Resampling.LANCZOS)
                     image.save(visual_path)
                     #image.show()
 
