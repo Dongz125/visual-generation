@@ -91,8 +91,8 @@ Response:
 {
     "visuals": [
         {
-            "visual_id": "generated_id",
-            "visual_url": "https://cloudinary-url.com/image.jpg",
+            "visual_id": "string",
+            "visual_url": "string",
             "type": "image",
             "style": "realistic"
         }
